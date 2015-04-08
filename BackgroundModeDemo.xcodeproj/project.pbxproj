@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15BA28CB1A66143000D43787 /* ShakeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BA28CA1A66143000D43787 /* ShakeWindow.m */; };
+		15BA28CD1A66145600D43787 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15BA28CC1A66145600D43787 /* CoreMotion.framework */; };
 		15E31BC51A652E030054CE81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E31BC41A652E030054CE81 /* main.m */; };
 		15E31BC81A652E030054CE81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E31BC71A652E030054CE81 /* AppDelegate.m */; };
 		15E31BCB1A652E030054CE81 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E31BCA1A652E030054CE81 /* MasterViewController.m */; };
@@ -15,6 +17,9 @@
 		15E31BD31A652E040054CE81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15E31BD21A652E040054CE81 /* Images.xcassets */; };
 		15E31BD61A652E040054CE81 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E31BD41A652E040054CE81 /* LaunchScreen.xib */; };
 		15E31BE21A652E040054CE81 /* BackgroundModeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E31BE11A652E040054CE81 /* BackgroundModeDemoTests.m */; };
+		15E31BED1A652E2E0054CE81 /* BackgroundAudioPlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E31BEC1A652E2E0054CE81 /* BackgroundAudioPlay.m */; };
+		15E31BEF1A652E7A0054CE81 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E31BEE1A652E7A0054CE81 /* AVFoundation.framework */; };
+		15E31BF11A652E950054CE81 /* glass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 15E31BF01A652E950054CE81 /* glass.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15BA28C91A66143000D43787 /* ShakeWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeWindow.h; sourceTree = "<group>"; };
+		15BA28CA1A66143000D43787 /* ShakeWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeWindow.m; sourceTree = "<group>"; };
+		15BA28CC1A66145600D43787 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		15E31BBF1A652E030054CE81 /* BackgroundModeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgroundModeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E31BC31A652E030054CE81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15E31BC41A652E030054CE81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,6 +51,10 @@
 		15E31BDB1A652E040054CE81 /* BackgroundModeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackgroundModeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E31BE01A652E040054CE81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15E31BE11A652E040054CE81 /* BackgroundModeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundModeDemoTests.m; sourceTree = "<group>"; };
+		15E31BEB1A652E2E0054CE81 /* BackgroundAudioPlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundAudioPlay.h; sourceTree = "<group>"; };
+		15E31BEC1A652E2E0054CE81 /* BackgroundAudioPlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundAudioPlay.m; sourceTree = "<group>"; };
+		15E31BEE1A652E7A0054CE81 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		15E31BF01A652E950054CE81 /* glass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = glass.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15BA28CD1A66145600D43787 /* CoreMotion.framework in Frameworks */,
+				15E31BEF1A652E7A0054CE81 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +80,8 @@
 		15E31BB61A652E020054CE81 = {
 			isa = PBXGroup;
 			children = (
+				15BA28CC1A66145600D43787 /* CoreMotion.framework */,
+				15E31BEE1A652E7A0054CE81 /* AVFoundation.framework */,
 				15E31BC11A652E030054CE81 /* BackgroundModeDemo */,
 				15E31BDE1A652E040054CE81 /* BackgroundModeDemoTests */,
 				15E31BC01A652E030054CE81 /* Products */,
@@ -84,6 +100,11 @@
 		15E31BC11A652E030054CE81 /* BackgroundModeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				15E31BF01A652E950054CE81 /* glass.wav */,
+				15BA28C91A66143000D43787 /* ShakeWindow.h */,
+				15BA28CA1A66143000D43787 /* ShakeWindow.m */,
+				15E31BEB1A652E2E0054CE81 /* BackgroundAudioPlay.h */,
+				15E31BEC1A652E2E0054CE81 /* BackgroundAudioPlay.m */,
 				15E31BC61A652E030054CE81 /* AppDelegate.h */,
 				15E31BC71A652E030054CE81 /* AppDelegate.m */,
 				15E31BC91A652E030054CE81 /* MasterViewController.h */,
@@ -173,6 +194,11 @@
 				TargetAttributes = {
 					15E31BBE1A652E020054CE81 = {
 						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					15E31BDA1A652E040054CE81 = {
 						CreatedOnToolsVersion = 6.1;
@@ -207,6 +233,7 @@
 				15E31BD11A652E040054CE81 /* Main.storyboard in Resources */,
 				15E31BD61A652E040054CE81 /* LaunchScreen.xib in Resources */,
 				15E31BD31A652E040054CE81 /* Images.xcassets in Resources */,
+				15E31BF11A652E950054CE81 /* glass.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,9 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15BA28CB1A66143000D43787 /* ShakeWindow.m in Sources */,
 				15E31BC81A652E030054CE81 /* AppDelegate.m in Sources */,
 				15E31BCB1A652E030054CE81 /* MasterViewController.m in Sources */,
 				15E31BC51A652E030054CE81 /* main.m in Sources */,
+				15E31BED1A652E2E0054CE81 /* BackgroundAudioPlay.m in Sources */,
 				15E31BCE1A652E030054CE81 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +447,7 @@
 				15E31BE71A652E040054CE81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15E31BE81A652E040054CE81 /* Build configuration list for PBXNativeTarget "BackgroundModeDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +456,7 @@
 				15E31BEA1A652E040054CE81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
